@@ -12,20 +12,20 @@ function Navbar() {
     useGSAP(() => {
         const navTween = gsap.timeline({
             scrollTrigger: {
-                trigger: navRef.current,
-                start: 'bottom top',
-                toggleActions: 'play none none reverse', // optional
+                trigger: '#hero',      // use Hero section as trigger
+                start: 'bottom top',   // when hero bottom hits top of viewport
+                toggleActions: 'play none none reverse',
             },
         })
 
         navTween.fromTo(
             navRef.current,
             {
-                backgroundColor: '#00000050',
-                backdropFilter: 'blur(10px)',
+                backgroundColor: 'transparent', // default no bg
+                backdropFilter: 'none',
             },
             {
-                backgroundColor: '#000000',
+                backgroundColor: '#000000',    // background on scroll
                 backdropFilter: 'blur(20px)',
                 duration: 1,
                 ease: 'power1.inOut',
