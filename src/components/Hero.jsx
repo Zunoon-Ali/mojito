@@ -49,7 +49,7 @@ const Hero = () => {
 
     // Different scroll trigger values for mobile vs desktop
     const startValue = isMobile ? "top 50%" : "center 60%";
-    const endValue = isMobile ? "120% top" : "bottom top";
+    const endValue = isMobile ? "206% top" : "85% top";
 
     // Timeline for video scroll animation
     let tl = gsap.timeline({

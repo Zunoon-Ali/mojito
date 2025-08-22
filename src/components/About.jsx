@@ -37,12 +37,12 @@ const About = () => {
   });
 
   return (
-    <div id="about" className="py-16">
+    <div id="about" className="py-16 z-100">
       {/* Text Section */}
       <div className="mb-16 md:px-0 px-5">
         <div className="grid md:grid-cols-12 gap-8 content">
           {/* Left Side */}
-          <div className="md:col-span-8">
+          <div className="md:col-span-8 z-10">
             <p className="badge">Best Cocktails</p>
             <h2 className="text-3xl md:text-5xl font-bold leading-tight">
               Where every detail matters <span className="text-white">-</span>{" "}
